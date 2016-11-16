@@ -6,7 +6,7 @@ import {
   Segment,
 } from 'src'
 import Logo from '../Components/Logo/Logo'
-import { semanticUIDocsURL, semanticUIRepoURL, semanticUICSSRepoURL } from 'docs/app/utils'
+import { semanticUIDocsURL, semanticUIRepoURL, semanticUICSSRepoURL, semanticUIMeteorRepoURL } from 'docs/app/utils'
 
 const suiCSSVersion = pkg.devDependencies['semantic-ui-css'].replace(/[~^]/, '')
 
@@ -111,7 +111,19 @@ const Usage = () => (
           import '.../semantic/dist/semantic.min.css';
         </pre>
       </Segment>
+
+  {/* ----------------------------------------
+       *  Semantic-UI-Meteor package
+       * -------------------------------------- */}
+      <Header as='h3'>Semantic UI Meteor package</Header>
+      <p>
+        The <a href={semanticUIMeteorRepoURL}>Semantic UI Meteor package</a> is where you want to start if you're using Meteor.
+      </p>
+      <p>
+        Semantic UI Meteor can be installed as a package in your project using NPM. See the repo for detailed instructions.
+      </p>
     </Segment>
+
   </Container>
 )
 
